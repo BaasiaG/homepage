@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja pierwsza strona</title>
+    <link href="CSS/style.css" rel="stylesheet">
+    <link href="CSS/section.css" rel="stylesheet">
+    <link href="CSS/navigation.css" rel="stylesheet">
+    <link href="CSS/container.css" rel="stylesheet">
+    <link href="CSS/footer.css" rel="stylesheet">
+    <link href="CSS/table.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <script defer src="JS/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="body">
+    <div class="container">
+        <section class="section">
+            <h2 class="section__header">hello!</h2>
+
+            <ul class="navigation">
+                <li class="navigation__item"><a class="navigation__link" href="#home">Home</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#o-mnie">O mnie</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#hobby">Hobby</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#kontakt">Kontakt</a></li>
+            </ul>
+
+            <img width="180" height="180" class="section__image" src="https://i.ibb.co/dBFHWfm/IMG-5.jpg" alt="Barbara">
+
+            <p><img width="20" height="90" src=https://i.ibb.co/HnDB269/strzalka-1.png alt="strzalka"></p>
+            <p><button class="section__button js-removePhoto">UKRYJ ZDJĘCIE</button></p>
+        </section>
+
+        <section class="section">
+            <h3 class="section__subHeader" id="o-mnie">O mnie</h3>
+            <p class="section__paragraph">Mam na imię <b> Basia</b> I mam 28 lat. Z wykształcenia jestem
+                <span class="section__element">Architektem wnętrz</span> z
+                zamiłowaniem do
+                tworzenia rożnych projektów graficznych.
+                Zainteresował mnie frontend i jestem bardzo pozytywnie nastawiona do nauki czegoś nowego.</p>
+
+
+            <h3 class="section__subHeader" id="hobby">Hobby</h3>
+            <p class="section__paragraph"> w wolnym czasie maluje akwarelami, spędzam czas w <i> Illustratorze</i>, <br>
+                uczę się języka
+                norweskiego
+                i czasem
+                pobiegam. Uwielbiam podróżować i spacerować.
+            </p>
+        </section>
+
+        <section class="section">
+
+            <div class="tableContainer">
+                <table class="table">
+                    <caption class="table__caption">Stolice Europy które odwiedziłam lub planuje odwiedzić</caption>
+                    <thead>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="col">Stolica</th>
+                            <th class="table__cell table__cell--header" scope="col">Kraj</th>
+                            <th class="table__cell table__cell--header" scope="col">Odzwiedzone?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">Rzym</th>
+                            <td class="table__cell">Włochy</td>
+                            <td class="table__cell">Nie</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">Oslo</th>
+                            <td class="table__cell">Norwegia</td>
+                            <td class="table__cell">Tak</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">Amsterdam</th>
+                            <td class="table__cell">Holandia</td>
+                            <td class="table__cell">Tak</td>
+
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">Madryt</th>
+                            <td class="table__cell">Hiszpania</td>
+                            <td class="table__cell">Nie</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">Sztokholm</th>
+                            <td class="table__cell">Szwecja</td>
+                            <td class="table__cell">Nie</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">Lizbona</th>
+                            <td class="table__cell">Portugalia</td>
+                            <td class="table__cell">tak</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <p class="backGround"><button class="section__button js-changeColor">ZMIEŃ TŁO</button></p>
+        <p class="contact"><button class="section__button js-buttonContact" id="kontakt">ZOBACZ KONTAKT</button></p>
+
+
+        <section id="contact">
+            <h3 class="section__subHeader" id="hobby">Kontakt</h3>
+
+
+            <section class="section">
+                <p><a class="section__link" href="mailto:gierszbarbara@gmail.com">e-mail: gierszbarbara@gmail.com</a>
+                </p>
+                <p><a class="section__link" href="tel:+48.123(456)789">tel: 123 456 789</a></p>
+            </section>
+        </section>
+
+
+        <footer class="footer">&copy; Barbara Giersz 2020</footer>
+    </div>
+</body>
+
+</html>
