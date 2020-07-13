@@ -1,41 +1,48 @@
-console.log("Cześć!");
+{
+  const welcome = () => {
+    console.log("Cześć!");
+  };
 
-let removePhoto = document.querySelector(".js-removePhoto");
+  const toggleBackground = () => {
+    const body = document.querySelector(".body");
+    body.classList.toggle("newBody");
+  };
 
-let img = document.querySelector(".section__image");
+  const hideImageClick = () => {
+    const img = document.querySelector(".section__image");
+    img.remove();
+  };
 
-removePhoto.addEventListener("click", () => {
+  const seeContact = () => {
 
-  img.remove();
-});
+    const contact = document.getElementById("contact");
+    if (contact.style.display === "block") {
+      contact.style.display = "none";
+      buttonContact.innerText = "ZOBACZ KONTAKT";
 
+    } else {
+      contact.style.display = "block";
+      buttonContact.innerText = "UKRYJ KONTAKT";
 
-console.log(removePhoto);
+    }
+  };
 
-let changeColor = document.querySelector(".js-changeColor");
-let body = document.querySelector(".body");
+  const init = () => {
 
-changeColor.addEventListener("click", () => {
-  body.classList.toggle("newBody");
-});
+    const changeColor = document.querySelector(".js-changeColor");
+    changeColor.addEventListener("click", toggleBackground);
 
+    const removePhoto = document.querySelector(".js-removePhoto");
+    removePhoto.addEventListener("click", hideImageClick);
+    console.log(removePhoto);
 
+    const buttonContact = document.querySelector(".js-buttonContact");
+    buttonContact.addEventListener("click", seeContact);
 
-
-let buttonContact = document.querySelector(".js-buttonContact");
-let contact = document.getElementById("contact");
-
-buttonContact.addEventListener("click", () => {
-  if (contact.style.display === "block") {
-    contact.style.display = "none";
-    buttonContact.innerText = "ZOBACZ KONTAKT";
-
-  } else {
-    contact.style.display = "block";
-    buttonContact.innerText = "UKRYJ KONTAKT";
-
-  }
-});
-
+    welcome();
+  };
 
 
+  init();
+
+}
